@@ -1,0 +1,49 @@
+
+Instructions for advanced human-machine interaction (attendance taking using deep learning: resnet-50)
+
+-------------------------------------------------------------------------------------------
+Step 1: Download package
+
+$ cd ~/Desktop
+
+$ git clone https://github.com/Arijit1080/Face-Recognition-Based-Attendance-System
+
+-------------------------------------------------------------------------------------------
+
+Step 2: Download Trained Deep Learning Model
+
+Download Models from link: https://drive.google.com/drive/folders/12It2jeNQOxwStBxtagL1vvIJokoz-DL4?usp=sharing
+
+Extract the zip, you will have a folder "data_dlib".
+
+-------------------------------------------------------------------------------------------
+
+Step 3: Create "data" and "data_faces_from_camera" folders
+
+In the package, create a new folder named as "data".
+
+Under the "data" folder, create a new folder named as "data_faces_from_camera".
+
+Paste downloaded folder "data_dlib" under the newly created "data" folder
+
+-------------------------------------------------------------------------------------------
+
+Step 4: Execute commands to run
+Once done with above setup, cd and run 
+
+$ cd ~/Desktop/Face-Recognition-Based-Attendance-System
+
+    (a) Collect the Faces Dataset:
+    $ python3 get_faces_from_camera_tkinter.py
+    
+    (b) Extract the features:
+    $ python3 features_extraction_to_csv.py
+    
+    (c) Take the attendance:
+    $ python3 attendance_taker.py
+
+-------------------------------------------------------------------------------------------
+
+
+
+
